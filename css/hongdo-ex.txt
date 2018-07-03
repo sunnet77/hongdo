@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {font-size:100%;vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+
+body {-webkit-text-size-adjust:none} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+ 
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 
+*/
+ 
+
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+
+.blind {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.header {
+	height: 100px;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+.header h1{
+	width: 150px;
+	margin: 0 auto;
+}
+.header h1 img{
+	width: 80%;
+}
+.nav {
+	text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 10px;
+/*	overflow: hidden;*/
+}
+.menu_depth1 {
+	width: 200%;
+	height: 30px;
+}
+.menu_depth1>li {
+	position: relative;
+  float: left;
+}
+.menu_depth1>li>a {
+	font-weight: bold;
+  font-size: 15px;
+}
+.menu_depth1 a {
+	display: block;
+	height: 30px;
+  padding: 0 10px;
+	line-height: 30px;
+}
+.menu_depth1>li>a:hover{
+  color: white;
+  background: #000;
+}
+.menu_depth2{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 200;
+	width: 100%;
+}
+.menu_depth2 li{
+  margin-bottom: 15px;
+}
+.menu_depth2 li a{
+  color: white;
+  background: #20f08c;
+}
+.menu_depth2 li a:hover{
+  font-weight: bold;
+	color: blue;
+}
+.mainslide {
+	height: 390px;
+	position: relative;
+	overflow: hidden;
+}
+.mainslide img {
+	width: 100%;
+}
+.mainslide ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 400%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.mainslide li {
+	width: 100%;
+}
+.mainslide .slide_txt {
+	position: absolute;
+	z-index: 300;
+	top: 40px;
+	left: 307px;
+}
+.mainslide .slide_txt {
+	font-style: italic;
+	font-size: 30px;
+	font-weight: bold;
+	color: deeppink;
+}
+.contents {
+	position: relative;
+	z-index: 400;
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 200px;
+/*	top: 440px;*/
+}
+.area_row1 .col1 {
+	height: 300px;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	margin-left: -50%;
+/*	margin-bottom: 20px;*/
+	width: 100%;
+	background: url(../imgs/m-sec.jpg) 0 0 no-repeat;
+	-webkit-background-size: contain;
+/*	background-size: contain;*/
+}
+.area_row1 .col1 h2 {
+	font-size: 18px;
+	padding: 10px 20px 5px;
+}
+.area_row1 .col1 ul {
+	font-size: 16px;
+	padding-left: 20px;
+}
+.area_row1 .col2 {
+	position: relative;
+	margin-top: 50px;
+	height: 120px;
+	width: 98%;
+/*	left: 50%;*/
+	margin: 62px 20px 20px 0;
+	background-color: aqua;
+/*	-webkit-background-size: contain;*/
+	display: block;
+	padding: 5px 5px;
+}
+.area_row1 .col2 h2 {
+	font-size: 18px;
+	padding: 10px 20px 5px;
+}
+.area_row1 .col2 a {
+	font-size: 16px;
+	padding-left: 20px;
+}
+.area_row1 .col2 a>strong {
+	font-size: 16px;
+	padding-left: 20px;
+}
+.area_row1 .col3 {
+	position: relative;
+	margin-top: 20px;
+	height: 450px;
+/*	width: 600px;*/
+	background: url(../imgs/map1.gif) 0 0 repeat;
+	-webkit-background-size: contain;
+	display: block;
+	width: 98%;
+	background-color: dodgerblue;
+}
+.area_row1 .col3 h2 {
+	font-size: 18px;
+	padding: 10px 20px 5px;
+}
+.area_row1 .col3 .img_txt {
+	font-size: 16px;
+	padding-left: 20px;
+}
+.area_row1 .col4 {
+/*	display: inline-block;*/
+	height: 100px;
+	width: 600px;
+	background-color: aqua;
+	clear: both;
+	text-align: center;
+	margin: 20px 0;
+}
+/*
+.area_row1 .col4 {
+	clear: both;
+	text-align: center;
+}
+*/
+.area_row1 .col4 h2 {
+	text-align: left;
+}
+.area_row1 .col4 ul {
+	display: inline-block;
+	text-align: center;
+}
+.area_row1 .col4 li {
+	float: left;
+	font-weight: bold;
+	color: black;
+	padding: 70px 25px;
+}
+
+
+
+
+
+
+
+
+
+
